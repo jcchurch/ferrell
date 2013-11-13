@@ -22,7 +22,7 @@
             var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
             var tomsOffice = new google.maps.Marker({
-                position: new google.maps.LatLng(34.3626936, -89.514344),
+                position: new google.maps.LatLng(34.362488,-89.514629),
                 map: map,
                 title: '605 South 16th Street, Oxford, MS.'
             });
@@ -31,7 +31,7 @@
                 content: "Visit Thomas Ferrell at 605 South 16th Street, Oxford, MS."
             });
 
-            google.maps.event.addListener(marker, 'click', function() {
+            google.maps.event.addListener(tomsOffice, 'click', function() {
                 infowindow.open(map,tomsOffice);
             });
         }
