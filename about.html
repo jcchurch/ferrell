@@ -16,7 +16,9 @@
       body {
         padding-top: 20px;
         padding-bottom: 40px;
+        background-image: url('images/law.png');
       }
+      
 
       /* Custom container */
       .container-narrow {
@@ -29,13 +31,30 @@
 
       /* Main marketing message and sign up button */
       .jumbotron {
-        margin: 60px 0;
-        text-align: center;
+        margin-top: 30px;
+        
+        /*text-align: center;*/
       }
+      
+      .center
+      {
+          text-align: center;
+      }
+      .right
+      {
+          text-align: right;
+      }
+      
       .jumbotron h1 {
         font-size: 72px;
         line-height: 1;
       }
+      
+      .jumbotron h3 {
+        font-weight: bold;
+        
+      }
+      
       .jumbotron .btn {
         font-size: 21px;
         padding: 14px 24px;
@@ -52,57 +71,63 @@
   </head>
 
   <body>
-  <div class="container-narrow">
+  <div class="container-narrow panel" style="padding: 5px; background-color:rgba(0, 0, 0, 0.7);">
 
-      <div class="masthead">
+      <div class="masthead" >
         <ul class="nav nav-pills pull-right">
-          <li><a href="index.html">Home</a></li>
+          <li ><a href="index.html">Home</a></li>
           <li class="active"><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <h3 class="text-muted"><span class="glyphicon glyphicon-briefcase"></span> Thomas B. Ferrell <span class="glyphicon glyphicon-earphone"></span> 662-234-4400</h3>
+        <h3 class="text-muted" ><span class="glyphicon glyphicon-briefcase"></span> Thomas B. Ferrell &nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span> 662-234-4400</h3>
       </div>
 
-      <div class="jumbotron">
+      <div class="jumbotron img-thumbnail panel-primary " style="padding: 20px; padding-bottom: 0px;">
         <div class="pull-left">
-          <img class="media-object img-thumbnail" src="images/tom.jpg" alt="...">
+          <img class="media-object img-thumbnail" src="images/tom_office.jpg" alt="...">
         </div>
 
-        <div class="media-body">
-          <div class="well-sm">
+        <div class="media-body " >
+          <div class="well-sm " >
 
-            <h2>Thomas B. Ferrell</h2>
-            <h2>Attorney At Law, PLLC</h2>            
-            <p class="lead">
-                "I am committed to helping people receive accurate legal advice for everyday legal needs."
+            <h2><b>Thomas B. Ferrell</b></h2>
+            <h3 class="right">Attorney At Law, PLLC</h3>
+            
+            <p class="lead center img-thumbnail" 
+               style="color:#b94a48; margin-top:0px; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px;">
+                <i>Ferrell is ready to put his knowledge to use for the benefit
+             of the Oxford community. If you are seeking legal representation, call Ferrell at <b>662-234-4400</b> today!</i>
+                
             </p>
           </div>
         </div>
       </div>
 
-      <hr>
+      
 
-      <div class="row">
-        <div class="col-lg-12">
-           <p class="lead">
-             [BIOGRAPHY PARAGRAPH] Thomas "Tom" Ferrell is a graduate of the University
+      <div class="row ">
+       <div class="col-lg-12">
+           
+           <div class="panel panel-danger">
+               <div class="panel-heading" style="background-color:#b94a48; color:white;">BIOGRAPHY</div>
+           <p class="lead well-sm">
+             TODO TODO Thomas "Tom" Ferrell is a graduate of the University
              of Mississippi and _______________. His degrees are in History and Law.
              For the past 15 years, he has managed a small business in Oxford, MS and
              understands the legal concerns of other small business owners. In that time,
              he has worked on small business legal needs, personal injury claims, and adoption law.
            </p>
-           <p class="lead">
-             [MOTIVATION PARAGRAPH] Thomas Ferrell is ready to put his knowledge to use for the benefit
-             of the Oxford community. If you are seeking legal representation, call Thomas at 662-234-4400 today!
-           <p>
-           </p>
+          
+           </div>
+           
+           
         </div>
-      </div>
+        </div>
 
-      <hr>
+      
 
       <div class="footer">
-         <span class="glyphicon glyphicon-copyright-mark"></span> Thomas Ferrell 2013
+         <span class="glyphicon glyphicon-copyright-mark"></span> Thomas B. Ferrell 2013
       </div>
 
   </div>

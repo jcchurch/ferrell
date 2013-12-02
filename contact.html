@@ -9,8 +9,7 @@
     <meta name="author" content="">
 
     <title>Thomas B. Ferrell, Attorney At Law, PLLC</title>
-
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGr7zjY0sZpWzIrFWkY2gw5OLlYUh7QfU&sensor=false"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGr7zjY0sZpWzIrFWkY2gw5OLlYUh7QfU&sensor=false"></script>
     <script type="text/javascript"> 
         function initialize() {
             var mapOptions = {
@@ -37,14 +36,15 @@
         }
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 20px;
         padding-bottom: 40px;
+        background-image: url('images/law.png');
       }
+      
 
       /* Custom container */
       .container-narrow {
@@ -57,13 +57,30 @@
 
       /* Main marketing message and sign up button */
       .jumbotron {
-        margin: 60px 0;
-        text-align: center;
+        margin-top: 30px;
+        
+        /*text-align: center;*/
       }
+      
+      .center
+      {
+          text-align: center;
+      }
+      .right
+      {
+          text-align: right;
+      }
+      
       .jumbotron h1 {
         font-size: 72px;
         line-height: 1;
       }
+      
+      .jumbotron h3 {
+        font-weight: bold;
+        
+      }
+      
       .jumbotron .btn {
         font-size: 21px;
         padding: 14px 24px;
@@ -80,39 +97,46 @@
   </head>
 
   <body>
-  <div class="container-narrow">
+  <div class="container-narrow panel" style="padding: 5px; background-color:rgba(0, 0, 0, 0.7);">
 
-      <div class="masthead">
+      <div class="masthead" >
         <ul class="nav nav-pills pull-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li ><a href="index.html">Home</a></li>
+          <li ><a href="about.html">About</a></li>
           <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
-        <h3 class="text-muted"><span class="glyphicon glyphicon-briefcase"></span> Thomas B. Ferrell <span class="glyphicon glyphicon-earphone"></span> 662-234-4400</h3>
+        <h3 class="text-muted" ><span class="glyphicon glyphicon-briefcase"></span> Thomas B. Ferrell &nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span> 662-234-4400</h3>
       </div>
 
-      <div class="jumbotron">
+      <div class="jumbotron img-thumbnail panel-primary " style="padding: 20px; padding-bottom: 0px;">
         <div class="pull-left">
-          <img class="media-object img-thumbnail" src="images/tom.jpg" alt="...">
+          <img class="media-object img-thumbnail" src="images/office_bld.jpg" alt="...">
         </div>
 
-        <div class="media-body">
-          <div class="well-sm">
+        <div class="media-body " >
+          <div class="well-sm " >
 
-            <h2>Thomas B. Ferrell</h2>
-            <h2>Attorney At Law, PLLC</h2>            
-            <p class="lead">
-                "I am committed to helping people receive accurate legal advice for everyday legal needs."
+            <h2><b>Thomas B. Ferrell</b></h2>
+            <h3 class="right">Attorney At Law, PLLC</h3>
+            
+            <p class="lead center img-thumbnail" 
+               style="color:#c09853; margin-top:0px; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px;">
+                <i>TODO TODO some other blurb goes here about the office
+             location or pop in anytime I have no idea TODO TODO <b>information</b> today! asdfasdfadfaa asdfasdfadsfa</i>
+                
             </p>
           </div>
         </div>
       </div>
 
-      <hr>
+      
 
-      <div class="row">
-        <div class="col-lg-12">
-            <address>
+      <div class="row ">
+       <div class="col-lg-12">
+           
+           <div class="panel panel-warning">
+               <div class="panel-heading" style="">
+                   <address>
               <strong>Thomas B. Ferrell, Attorney At Law, PLLC</strong><br>
               606 South 16th Street<br>
               Oxford, MS 38655<br>
@@ -125,15 +149,27 @@
               <a href="mailto:tom@ferrellatlaw.com">tom@ferrellatlaw.com</a><br>
               <a href="http://facebook.com/FerrellAtLaw">facebook.com/FerrellAtLaw</a><br>
             </address>
-
-            <hr>
+               
+               
+               
+               
+               
+               </div>
+           <div class="well-sm">
+             
             <div id="map_canvas" style="width: 500px; height: 400px"></div>
+           </div>
+          
+           </div>
+           
+           
         </div>
-      </div>
-      <hr>
+        </div>
+
+      
 
       <div class="footer">
-         <span class="glyphicon glyphicon-copyright-mark"></span> Thomas Ferrell 2013
+         <span class="glyphicon glyphicon-copyright-mark"></span> Thomas B. Ferrell 2013
       </div>
 
   </div>
